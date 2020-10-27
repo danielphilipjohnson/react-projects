@@ -1,0 +1,96 @@
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+  padding-top: 48px;
+  margin-bottom: 48px;
+  color: #303030;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+footer a,
+footer a:visited {
+  color: #525252;
+}
+footer a:hover,
+footer a:focus {
+  color: #fff;
+}
+
+/* copyright */
+footer .copyright {
+  margin: 0;
+  padding: 0;
+}
+footer .copyright li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+.ie footer .copyright li {
+  display: inline;
+}
+footer .copyright li:before {
+  content: "\2022";
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #095153;
+}
+footer .copyright li:first-child:before {
+  display: none;
+}
+
+/* social links */
+footer .social-links {
+  margin: 18px 0 30px 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.social-links .nav-item {
+  padding: 7px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 0.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.75;
+  transition: background-color 0.75s;
+}
+
+.social-links .nav-item.facebook:hover {
+  background-color: #4267b2;
+}
+.social-links .nav-item.twitter:hover {
+  background-color: #1da1f2;
+}
+.social-links .nav-item.youtube:hover {
+  background-color: #ff0000;
+}
+.social-links .nav-item.instagram:hover {
+  background-color: #c13584;
+}
+.social-links .nav-item.linkedin:hover {
+  background-color: #2867b2;
+}
+.social-links .nav-item.github:hover {
+  background-color: #000;
+}
+
+footer .social-links li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-left: 42px;
+  color: #f06000;
+}
+
+footer .social-links li:first-child {
+  margin-left: 0;
+}

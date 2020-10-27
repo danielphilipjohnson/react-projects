@@ -1,0 +1,166 @@
+{
+  "main": {
+    "name": "Daniel Philip Johnson",
+    "occupation": "ReactJS Developer && Psychologist",
+    "description": "Psychologist by Day, Full Stack React Developer by Night.",
+    "image": "profile.jpg",
+    "bio": "My name is Daniel, I'm a Full trained psychologist now focusing on Full Stack ReactJS Development. Currently I'm working at Psychologist and hope to intergrate it with web development ",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "daniel-philip-johnson@outlook.com",
+    "phone": "+44 12 345 6789",
+    "address": {
+      "street": "Cornwall",
+      "city": "Truro",
+      "state": "UK",
+      "zip": "TR27"
+    },
+    "website": "https://5f56ccfc989466fcd9b6e239--gifted-lovelace-231df6.netlify.app/",
+    "resumedownload": "https://5f56ccfc989466fcd9b6e239--gifted-lovelace-231df6.netlify.app/",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/DanielPhilipJohnson",
+        "className": "fa fa-facebook"
+      }, {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/daniel-philip-johnson/",
+        "className": "fa fa-linkedin"
+      }, {
+        "name": "instagram",
+        "url": "https://www.instagram.com/danielphilipjohnson/",
+        "className": "fa fa-instagram"
+      }, {
+        "name": "github",
+        "url": "https://github.com/danielphilipjohnson/",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "University of Hong Kong",
+        "degree": "Full-Stack Web Development with React",
+        "graduated": "August 2020",
+        "logo": "./images/course-logos/hong.png"
+      },
+      {
+        "school": "University of Michigan",
+        "degree": "Web Applications for Everybody",
+        "graduated": "June 2020",
+        "logo": "./images/course-logos/michigan.png"
+      },
+      {
+        "school": "Google",
+        "degree": "Google IT Automation with Python Specialization",
+        "graduated": "March 2020",
+        "logo": "./images/course-logos/google.png"
+      },
+      {
+        "school": "University of Plymouth",
+        "degree": "BSc Psychology",
+        "graduated": "April 2014",
+        "logo": "./images/course-logos/plymouth.png"
+
+      }, {
+        "school": "University of Plymouth",
+        "degree": "HND Applied Psychology",
+        "graduated": "May 2012",
+        "logo": "./images/course-logos/plymouth.png"
+      }
+    ],
+    "work": [
+      {
+        "company": "Freelance React Developer",
+        "title": "React mobile and app developer",
+        "years": "April 2020 - Present",
+        "description": "Building React projects for clients"
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "100%"
+      },
+      {
+        "name": "CSS",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "60%"
+      },
+      {
+        "name": "Figma && Adobe XD",
+        "level": "55%"
+      }, {
+        "name": "HTML5",
+        "level": "80%"
+      }, {
+        "name": "MongoDB",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "MERN Stack WhatsApp Clone",
+        "category": "WhatsApp Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+        "image": "project10.png",
+        "url": "https://www.youtube.com/watch?v=gzdQDxzW2Tw"
+      },
+      {
+        "title": "MERN Stack TikTok Clone",
+        "category": "TikTok Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+        "image": "project7.png",
+        "url": "https://www.youtube.com/watch?v=g8yGxDMyGiE"
+      },
+      {
+        "title": "Facebook Clone with React",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "project8.png",
+        "url": "https://www.youtube.com/watch?v=B-kxUMHBxNo"
+      },
+      {
+        "title": "Airbnb Clone",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "project4.jpg",
+        "url": "https://www.youtube.com/watch?v=BtJeH_-XYaA"
+      }
+    ]
+  },
+  "testimonials": {
+    
+    "testimonialsnew": [
+      {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium,        ea,        corrupti culpa illum soluta ipsam eos,        eius ad error voluptate sint? Non,        fugit !",
+        "username": "Sam Smith",
+        "state": "New York",
+        "profile": "./images/testimonials/person1.jpg",
+        "stars": "4"
+      }, 
+      {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium,        ea,        corrupti culpa illum soluta ipsam eos,        eius ad error voluptate sint? Non,        fugit !",
+        "username": "Sara Williams",
+        "state": "Michigan",
+        "profile": "./images/testimonials/person2.jpg",
+        "stars": "4"
+      },{
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium,        ea,        corrupti culpa illum soluta ipsam eos,        eius ad error voluptate sint? Non,        fugit !",
+        "username": "Jill Johnson",
+        "state": "London",
+        "profile": "./images/testimonials/person3.jpg",
+        "stars": "4"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis quia nostrum nam ab vel laudantium,        ea,        corrupti culpa illum soluta ipsam eos,        eius ad error voluptate sint? Non,        fugit !",
+        "username": "Steve Thompson",
+        "state": "Boston",
+        "profile": "./images/testimonials/person4.jpg",
+        "stars": "5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+/* ------------------------------------------------------------------ */
+/* d. Resume Section
+/* ------------------------------------------------------------------ */
+
+#resume {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#resume a,
+#resume a:visited {
+  color: #11abb0;
+}
+#resume a:hover,
+#resume a:focus {
+  color: #313131;
+}
+
+#resume h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#resume h1 span {
+  border-bottom: 3px solid #11abb0;
+  padding-bottom: 6px;
+}
+#resume h3 {
+  font: 1.9rem "opensans-bold", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#resume .header-col {
+  padding-top: 9px;
+}
+#resume .main-col {
+  padding-right: 10%;
+}
+#resume .school {
+  padding: 2rem 0;
+  /* border-left:  1px solid #e8e8e8;
+   border-right:  1px solid #e8e8e8; */
+  border-bottom: 1px solid #e8e8e8;
+}
+#resume .school:first-child {
+  padding: 0 0 2rem 0;
+}
+#resume .school:last-child {
+  border: none;
+}
+
+#resume .grade {
+  margin: 0;
+}
+.course-logo {
+  width: 75px;
+  height: 75px;
+  border: 4px solid transparent;
+  border-radius: 6px;
+  float: left;
+  clear: both;
+  margin-right: 1rem;
+}
+
+.education,
+.work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8e8e8;
+}
+#resume .info {
+  font: 16px/24px "librebaskerville-italic", serif;
+  color: #6e7881;
+  /* margin-bottom: 18px;
+  margin-top: 9px; */
+  margin: 0;
+}
+#resume .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#resume .date {
+  font: 15px/24px "opensans-regular", sans-serif;
+  margin-top: 6px;
+}
+
+.technical-skills .skills img {
+  width: 150px;
+  height: 150px;
+  padding: 2rem;
+}

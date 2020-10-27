@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------------ */
+/* f. Call To Action Section: possible remove
+/* ------------------------------------------------------------------ */
+
+#call-to-action {
+  background: #212121;
+  padding-top: 66px;
+  padding-bottom: 48px;
+
+  h1 {
+    font: 18px/24px "opensans-bold", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+  }
+
+
+}
+
+// #call-to-action h1 span {
+//   display: none;
+// }
+#call-to-action {
+
+  .action {
+    margin-top: 12px;
+  }
+
+  .header-col h1:before {
+    font-family: "FontAwesome";
+    content: "\f0ac";
+    padding-right: 10px;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left;
+    float: left;
+    color: #fff;
+  }
+
+
+  h2 {
+    font: 28px/36px "opensans-bold", sans-serif;
+    color: #ebeeee;
+    margin-bottom: 6px;
+    a {
+      color: inherit;
+    }
+  }
+  p {
+    color: #636363;
+    font-size: 17px;
+    span {
+      font-family: "opensans-semibold", sans-serif;
+      color: #d8d8d8;
+    }
+  }
+
+
+}
+
+
+
+#call-to-action .button:hover,
+#call-to-action .button:active {
+  background: #ffffff;
+  color: #0d0d0d;
+}
+// #call-to-action p span {
+//   font-family: "opensans-semibold", sans-serif;
+//   color: #d8d8d8;
+// }
