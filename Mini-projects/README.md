@@ -40,15 +40,41 @@
 
 In this folder contains projects I built for UDEMY react courses and freecodecamp.
 
-- Calculator
-- Comfy Store
-- Dark mode app
-- Drumkit
-- Hacker News
-- Movie DB
-- Pagination
-- Random Person Generator
-- Stock Photo
+### Calculator
+
+![Calculator](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/calculator.png)
+
+### Comfy Store
+
+![Comfy Store](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/comfy-sloth.png)
+
+### Dark mode app
+
+![Dark mode app](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/dark-mode.png)
+
+### Drumkit
+
+![Drumkit](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/drumkit.png)
+
+### Hacker News
+
+![Hacker News](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/hackernews.png)
+
+### Movie DB
+
+![Movie DB](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/moviedb.png)
+
+### Pagination
+
+![Pagination](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/pagination.png)
+
+### Random Person Generator
+
+![Random Person Generator](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/random-person-generator.png)
+
+### Stock Photo
+
+![Stock Photo](https://raw.githubusercontent.com/danielphilipjohnson/react-projects/master/static/mini-projects/stock-photo.png)
 
 ### Built With
 
@@ -114,9 +140,6 @@ Project Link: [https://github.com/danielphilipjohnson/react-projects](https://gi
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [React](https://reactjs.org/)
-- [Firebase](https://github.com/firebase/firebase-js-sdk/)
-- [Algolia](https://github.com/algolia/algoliasearch-client-javascript#readme)
-- [Stripe](https://www.npmjs.com/package/@stripe/react-stripe-js)
 
 [contributors-shield]: https://img.shields.io/github/contributors/danielphilipjohnson/react-projects.svg?style=for-the-badge
 [contributors-url]: https://github.com/danielphilipjohnson/react-projects/graphs/contributors
