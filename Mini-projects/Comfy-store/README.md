@@ -1,17 +1,10 @@
-## Notes
+# Comfy sloth ecommerce site
 
-#### Older React Version
+## To run
 
-```
-"react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-scripts": "3.4.3",
-```
+    npm start
 
-#### Current React Version
+## TODO
 
-```
-"react": "^17.0.1",
-"react-dom": "^17.0.1",
-"react-scripts": "4.0.0",
-```
+- Add stripe cart
+- backend items
