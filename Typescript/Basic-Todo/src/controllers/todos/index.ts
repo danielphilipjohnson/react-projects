@@ -13,7 +13,7 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
 }
 
 
-const addTodos = async (req: Request, res: Response): Promise<void> => {
+const addTodo = async (req: Request, res: Response): Promise<void> => {
   try {
     const body = req.body as Pick<TodoInterface,
       "name" | "description" | "status">;
