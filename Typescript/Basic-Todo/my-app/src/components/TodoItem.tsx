@@ -13,7 +13,7 @@ const TodoItem: React.FC<Props> = ({ todo, updateTodo, deleteTodo }) => {
       <div className="bg-white dark:bg-gray-800 shadow-lg mx-auto rounded-xl p-4">
         <p className="text-gray-600 dark:text-white">
           <span className="font-bold text-indigo-500 text-lg">“</span>
-          <h1 className={checkTodo}>{todo.description}</h1>
+          <span className={checkTodo}>{todo.description}</span>
           <span className="font-bold text-indigo-500 text-lg">”</span>
         </p>
         <div className="flex items-center mt-4">

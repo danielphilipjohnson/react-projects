@@ -9,7 +9,6 @@ import "./assets/main.css";
 const App: React.FC = () => {
   const [todos, setTodos] = useState<TodoInterface[]>([]);
 
-  console.log(todos);
   useEffect(() => {
     fetchTodos();
   }, []);
@@ -25,7 +24,6 @@ const App: React.FC = () => {
     formData: TodoInterface
   ): void => {
     e.preventDefault();
-    console.log(formData);
     addTodo(formData)
       .then(({ status, data }) => {
         if (status !== 201) {
@@ -63,7 +61,8 @@ const App: React.FC = () => {
       <Navbar />
 
       <main className="App container mx-auto mt-8 md:mt-16 p-4">
-        <AddTodo saveTodo={handleSaveTodo} />{" "}
+        <AddTodo saveTodo={handleSaveTodo} />
+
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 md:mb-0 mt-4 flex-between items-center py-2 px-2  ">
           {todos.map((todo: TodoInterface) => (
             <TodoItem

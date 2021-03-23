@@ -3,7 +3,7 @@ import React from "react";
 const Navbar: React.FC = () => {
   return (
     <div className="w-full flex flex-row items-center p-2 justify-between shadow-xs bg-indigo-500">
-      <div className="ml-8 text-lg text-white hidden md:flex">Tail-kit</div>
+      <div className="ml-8 text-lg text-white hidden md:flex">DPJ</div>
       <span className="w-full md:w-1/3 h-10 cursor-pointer border border-gray-300 text-sm rounded-full flex">
         <input
           type="search"
@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
       </div>
       <div className="flex items-center mr-8 md:flex">
         <a
-          href="https://github.com/Charlie85270/tail-kit"
+          href="https://github.com/danielphilipjohnson/react-projects"
           className="p-1 rounded-full text-white focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
         >
           <span className="sr-only">View github</span>
