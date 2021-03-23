@@ -17,25 +17,22 @@ class Pokemon {
         this.stats = stats;
     }
 }
-class FetchPokemon {
+class RenderPokemon {
     constructor(amountOfPokemons = 100) {
         this.getPokemon = (id) => __awaiter(this, void 0, void 0, function* () {
             const data = yield fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
             const pokemon = yield data.json();
-            console.log(pokemon);
-            // add stats
             const pokemonType = pokemon.types
                 .map((poke) => poke.type.name)
                 .join(", ");
             this.renderPokemon(new Pokemon(pokemon.id, pokemon.name, `${pokemon.sprites.front_default}`, pokemonType, pokemon.stats));
         });
-        this.renderPokemon = (pokemon) => {
-            const container = document.getElementById("app");
+        this.createAbilityList = (pokemonStats) => {
             const statsLength = 3;
             let powerOutputs = "";
             for (let i = 0; i < statsLength; i++) {
-                const abilityPower = pokemon.stats[i].base_stat;
-                const abilityName = pokemon.stats[i].stat.name;
+                const abilityPower = pokemonStats[i].base_stat;
+                const abilityName = pokemonStats[i].stat.name;
                 powerOutputs += `<li class="list-group-item">
       <div class="d-flex justify-content-between">
         <p class="m-0">${abilityName}</p>
@@ -43,31 +40,32 @@ class FetchPokemon {
       </div>
     </li>`;
             }
-            // for loop the stats
+            return powerOutputs;
+        };
+        this.renderPokemon = (pokemon) => {
+            const container = document.getElementById("app");
+            const ablityListDOM = this.createAbilityList(pokemon.stats);
             let output = `
     <div class="card card__pokemon m-2">
-    <h3 class="card-title mt-2"><span class="pokemon__id pe-2">#${pokemon.id}</span>${pokemon.name}</h3>
-    <img src=${pokemon.image} class="pokemon__img card-img-top" alt=${pokemon.name}>
-    <div class="card-body">
-    
-      
-     
-    <ul class="list-group mt-2">
-      ${powerOutputs}
-    </ul>
-    <p class="card-text resistance-box my-3 p-1">Resistance ${pokemon.type}</p>
+      <h4 class="card-title mt-2"><span class="pokemon__id pe-2">#${pokemon.id}</span>${pokemon.name}</h4>
+      <img src=${pokemon.image} class="pokemon__img card-img-top" alt=${pokemon.name}>
+      <div class="card-body">
+        <ul class="list-group mt-2">
+          ${ablityListDOM}
+        </ul>
+        <p class="card-text resistance-box my-3 p-1">Resistance ${pokemon.type}</p>
+      </div>
     </div>
-  </div>
-   
 `;
             container.innerHTML += output;
         };
         this.amountOfPokemons = amountOfPokemons;
+        this.getAllPokemon();
     }
-    get() {
+    getAllPokemon() {
         for (let i = 1; i <= this.amountOfPokemons; i++) {
             this.getPokemon(i);
         }
     }
 }
-new FetchPokemon(100).get();
+new RenderPokemon(10);

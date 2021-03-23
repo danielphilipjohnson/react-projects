@@ -1,6 +1,13 @@
+body {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card__pokemon {
   border: 15px solid #e5c927;
   background-color: #eeeaad;
+  width: 250px;
 }
 
 .card-img-top {
