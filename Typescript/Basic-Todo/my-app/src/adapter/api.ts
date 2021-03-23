@@ -24,10 +24,13 @@ export const addTodo = async (
       status: false,
     }
 
+    console.log(todo)
+    console.log(baseUrl + "/add-todo")
     const saveTodo: AxiosResponse<ApiDataType> = await axios.post(
       baseUrl + "/add-todo",
       todo
-    )
+    );
+
     return saveTodo;
   } catch (error) {
     throw new Error(error);
