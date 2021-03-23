@@ -1,0 +1,50 @@
+body {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__pokemon {
+  border: 15px solid #e5c927;
+  background-color: #eeeaad;
+  width: 250px;
+}
+
+.card-img-top {
+  border: 10px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(0, 143, 104),
+    rgb(250, 224, 66)
+  );
+  border-image-slice: 1;
+}
+.pokemon__img {
+  height: 200px;
+}
+.pokemon__id {
+  background: #cebf7b;
+  width: 3rem;
+  color: #333;
+  padding: 0.1rem;
+  font-weight: 700;
+  border-radius: 0 0 10px 0;
+}
+
+.card__pokemon .card-body {
+  padding: 0;
+}
+
+.list-group-item {
+  background-color: unset;
+}
+
+.resistance-box {
+  border: 4px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    rgb(0, 143, 104),
+    rgb(250, 224, 66)
+  );
+  border-image-slice: 1;
+}
