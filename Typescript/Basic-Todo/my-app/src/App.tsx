@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import TodoItem from "./components/TodoItem";
 import AddTodo from "./components/AddTodo";
 import { getTodos, addTodo, updateTodo, deleteTodo } from "./adapter/api";
@@ -58,66 +60,22 @@ const App: React.FC = () => {
 
   return (
     <React.Fragment>
-      <nav className="bg-gray-800 p-2 mt-0 fixed w-full z-10 top-0">
-        <div className="container mx-auto flex flex-wrap items-center">
-          <div className="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-            <a
-              className="text-white no-underline hover:text-white hover:no-underline"
-              href="/"
-            >
-              <span className="text-2xl pl-2">Daniel Philip Johnson</span>
-            </a>
-          </div>
-          <div className="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-            <ul className="list-reset flex justify-between flex-1 md:flex-none items-center">
-              <li className="mr-3">
-                <a
-                  className="inline-block py-2 px-4 text-white no-underline"
-                  href="/"
-                >
-                  Active
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="/"
-                >
-                  link
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="/"
-                >
-                  link
-                </a>
-              </li>
-              <li className="mr-3">
-                <a
-                  className="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-                  href="/"
-                >
-                  link
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <main className="App container shadow-lg mx-auto bg-white mt-24 md:mt-16 h-screen">
-        <h1>My Todos</h1>
+      <Navbar />
+
+      <main className="App container mx-auto mt-8 md:mt-16 p-4">
         <AddTodo saveTodo={handleSaveTodo} />{" "}
-        {todos.map((todo: TodoInterface) => (
-          <TodoItem
-            key={todo._id}
-            updateTodo={handleUpdateTodo}
-            deleteTodo={handleDeleteTodo}
-            todo={todo}
-          />
-        ))}{" "}
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 md:mb-0 mt-4 flex-between items-center py-2 px-2  ">
+          {todos.map((todo: TodoInterface) => (
+            <TodoItem
+              key={todo._id}
+              updateTodo={handleUpdateTodo}
+              deleteTodo={handleDeleteTodo}
+              todo={todo}
+            />
+          ))}
+        </div>
       </main>
+      <Footer />
     </React.Fragment>
   );
 };
