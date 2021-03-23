@@ -1,6 +1,6 @@
 import { Response, Request } from "express";
 
-import { TodoInterface } from "./../../types/todo";
+import { TodoInterface } from "../../types/todo";
 import Todo from "../../models/todo";
 
 const getTodo = async (req: Request, res: Response): Promise<void> => {
@@ -18,7 +18,6 @@ const addTodo = async (req: Request, res: Response): Promise<void> => {
     const body = req.body as Pick<TodoInterface,
       "name" | "description" | "status">;
 
-    console.log(req.body)
     const todo: TodoInterface = new Todo({ name: body.name, description: body.description, status: body.status })
 
     const newTodo: TodoInterface = await todo.save();

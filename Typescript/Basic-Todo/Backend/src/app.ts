@@ -7,9 +7,6 @@ import todoRoutes from "./routes";
 
 const app: Express = express()
 
-// create application/json parser
-var jsonParser = bodyParser.json()
-
 
 const PORT: string | number = process.env.PORT || 4000
 
@@ -31,5 +28,4 @@ mongoose
   )
   .catch(error => {
     throw error
-  })
-
+  });

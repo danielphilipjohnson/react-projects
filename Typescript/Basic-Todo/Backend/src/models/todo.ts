@@ -1,4 +1,4 @@
-import { TodoInterface } from "./../types/todo";
+import { TodoInterface } from "../types/todo";
 import { model, Schema } from "mongoose";
 
 
