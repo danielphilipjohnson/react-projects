@@ -28,3 +28,30 @@ const addTodos = async (req: Request, res: Response): Promise<void> => {
     throw error;
   }
 }
+
+
+const updateTodo = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const {
+      params: { id },
+      body,
+    } = req;
+
+    const updateTodo: TodoInterface | null = await Todo.findByIdAndUpdate(
+      { _id: id },
+      body,
+    )
+
+    const allTodos: TodoInterface[] = await Todo.find()
+
+    res.status(200).json({
+      message: "Todo Updated",
+      todo: updateTodo,
+      todos: allTodos,
+    })
+
+
+  } catch (error) {
+    throw error;
+  }
+}
