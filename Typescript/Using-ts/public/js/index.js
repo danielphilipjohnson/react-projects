@@ -8,41 +8,66 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-const container = document.getElementById("app");
-const amountOfPokemons = 100;
-const getPokemon = (id) => __awaiter(void 0, void 0, void 0, function* () {
-    const data = yield fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    const pokemon = yield data.json();
-    const pokemonType = pokemon.types
-        .map((poke) => poke.type.name)
-        .join(", ");
-    // refactor out
-    const transformedPokemon = {
-        id: pokemon.id,
-        name: pokemon.name,
-        image: `${pokemon.sprites.front_default}`,
-        type: pokemonType,
-    };
-    showPokemon(transformedPokemon);
-});
-const showPokemon = (pokemon) => {
-    let output = `
-        <div class="card">
-            <span class="card--id">#${pokemon.id}</span>
-            <img class="card--image" src=${pokemon.image} alt=${pokemon.name} />
-            <h1 class="card--name">${pokemon.name}</h1>
-            <span class="card--details">${pokemon.type}</span>
-        </div>
-    `;
-    container.innerHTML += output;
-};
-const fetchData = () => {
-    for (let i = 1; i <= amountOfPokemons; i++) {
-        getPokemon(i);
+class Pokemon {
+    constructor(id, name, image, type, stats) {
+        this.id = id;
+        this.name = name;
+        this.image = image;
+        this.type = type;
+        this.stats = stats;
     }
-};
-fetchData();
-const myFunc = () => {
-    console.log("im working");
-};
-myFunc();
+}
+class FetchPokemon {
+    constructor(amountOfPokemons = 100) {
+        this.getPokemon = (id) => __awaiter(this, void 0, void 0, function* () {
+            const data = yield fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+            const pokemon = yield data.json();
+            console.log(pokemon);
+            // add stats
+            const pokemonType = pokemon.types
+                .map((poke) => poke.type.name)
+                .join(", ");
+            this.renderPokemon(new Pokemon(pokemon.id, pokemon.name, `${pokemon.sprites.front_default}`, pokemonType, pokemon.stats));
+        });
+        this.renderPokemon = (pokemon) => {
+            const container = document.getElementById("app");
+            const statsLength = 3;
+            let powerOutputs = "";
+            for (let i = 0; i < statsLength; i++) {
+                const abilityPower = pokemon.stats[i].base_stat;
+                const abilityName = pokemon.stats[i].stat.name;
+                powerOutputs += `<li class="list-group-item">
+      <div class="d-flex justify-content-between">
+        <p class="m-0">${abilityName}</p>
+        <p class="m-0">${abilityPower}</p>
+      </div>
+    </li>`;
+            }
+            // for loop the stats
+            let output = `
+    <div class="card card__pokemon m-2">
+    <h3 class="card-title mt-2"><span class="pokemon__id pe-2">#${pokemon.id}</span>${pokemon.name}</h3>
+    <img src=${pokemon.image} class="pokemon__img card-img-top" alt=${pokemon.name}>
+    <div class="card-body">
+    
+      
+     
+    <ul class="list-group mt-2">
+      ${powerOutputs}
+    </ul>
+    <p class="card-text resistance-box my-3 p-1">Resistance ${pokemon.type}</p>
+    </div>
+  </div>
+   
+`;
+            container.innerHTML += output;
+        };
+        this.amountOfPokemons = amountOfPokemons;
+    }
+    get() {
+        for (let i = 1; i <= this.amountOfPokemons; i++) {
+            this.getPokemon(i);
+        }
+    }
+}
+new FetchPokemon(100).get();
