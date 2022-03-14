@@ -1,12 +1,14 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Image from 'next/image'
+
 import styles from '../../styles/Home.module.css'
 
 export default function Car({ car, error }) {
 
 	const router = useRouter()
 	const { id } = router.query
-	
+
 	if (error) {
 		return <div>Error! {error.message}</div>
 	}
@@ -22,9 +24,13 @@ export default function Car({ car, error }) {
 				<h1 className={styles.title}>
 					{id}
 				</h1>
+				<Image
+					src={car.image}
+					alt="Picture of the author"
+					width="500px"
+					height="300px"
 
-				<img src={car.image} width="300px" />
-
+				/>
 			</main>
 		</div>
 	)
