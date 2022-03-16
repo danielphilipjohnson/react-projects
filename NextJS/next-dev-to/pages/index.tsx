@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Loader from '../components/Loader'
+import toast from 'react-hot-toast';
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
 
       <main className='pt-20'>
         <Loader show />
+        <button onClick={() => toast.success('hello toast!')}>
+          Toast Me
+        </button>
       </main>
 
 
