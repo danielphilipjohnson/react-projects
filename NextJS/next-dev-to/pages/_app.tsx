@@ -6,7 +6,6 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
-      <p className=' font-noto-sans'>hdjkfhsajkdfh</p>
     </>
   )
 }
