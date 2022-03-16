@@ -18,7 +18,7 @@ export default function Navbar() {
 			<ul className='flex items-center justify-between h-full'>
 				<li className='rounded-full'>
 					<Link href="/">
-						<button className="uppercase text-2xl py-2 px-4 bg-black text-white font-noto-sans">DEV.NO</button>
+						<button className="font-bold uppercase text-2xl py-2 px-4 bg-black text-white font-noto-sans">DEV.NO</button>
 					</Link>
 				</li>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
 				{!username && (
 					<li>
 						<Link href="/enter">
-							<button className="bg-black text-white font-noto-sans">Log in</button>
+							<button className="bg-black text-white font-noto-sans px-4 py-2">Log in</button>
 						</Link>
 					</li>
 				)}
