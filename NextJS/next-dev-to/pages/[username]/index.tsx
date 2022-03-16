@@ -1,6 +1,6 @@
 export default function Page({ }) {
   return (
-	<main>
+	<main className="pt-20">
 		username page
 	</main>
   )
