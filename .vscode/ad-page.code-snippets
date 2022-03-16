@@ -16,7 +16,7 @@
 	// 	"description": "Log output to console"
 	// }
 	"component": {
-		"scope": "javascript,typescript",
+		"scope": "javascript,typescript, typeScript",
 		"prefix": "next-page",
 		"body": [
 			"export default function Page({ }) {",
