@@ -1,9 +1,10 @@
 import { Property} from "../../prisma-estate-agent/node_modules/.prisma/client";
 
 import { createSlice } from "@reduxjs/toolkit";
+import { HouseWithAddress } from "../types";
 // Type for our state
 export interface HouseState {
-  houses: Property[];
+  houses: HouseWithAddress[];
   location: string;
   searched: boolean;
 }
