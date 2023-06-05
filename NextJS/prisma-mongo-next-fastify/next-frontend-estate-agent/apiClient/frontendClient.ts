@@ -46,7 +46,7 @@ export class EstateAgentFrontendApiClientModel {
 
   async getHouseById(id: string) {
     const url = this.baseUrl + this.urls.houseById;
-    return this.baseRequest<HouseWithAddress>(`${url}${id}`);
+    return this.baseRequest<HouseWithAddress>(`${url}/${id}`);
   }
 
   async getHouseByType(type: string) {
